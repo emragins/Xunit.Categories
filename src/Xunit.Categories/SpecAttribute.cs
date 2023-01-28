@@ -3,21 +3,21 @@ using Xunit.Sdk;
 
 namespace Xunit.Categories
 {
-    [TraitDiscoverer(SpecificationDiscoverer.DiscovererTypeName, DiscovererUtil.AssemblyName)]
+    [TraitDiscoverer(SpecDiscoverer.DiscovererTypeName, DiscovererUtil.AssemblyName)]
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true)]
-    public class SpecificationAttribute:Attribute, ITraitAttribute
+    public class SpecAttribute:Attribute, ITraitAttribute
     {
-        public SpecificationAttribute()
+        public SpecAttribute()
         {
 
         }
 
-        public SpecificationAttribute(string id)
+        public SpecAttribute(string id)
         {
             this.Identifier = id;
         }
 
-        public SpecificationAttribute(long id)
+        public SpecAttribute(long id)
         {
             this.Identifier = id.ToString();
         }
