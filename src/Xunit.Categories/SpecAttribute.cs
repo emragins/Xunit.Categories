@@ -12,9 +12,9 @@ namespace Xunit.Categories
 
         }
 
-        public SpecAttribute(string name)
+        public SpecAttribute(string id)
         {
-            this.Identifier = name;
+            this.Identifier = id;
         }
 
         public SpecAttribute(long id)
